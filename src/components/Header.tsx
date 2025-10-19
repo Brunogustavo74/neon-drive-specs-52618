@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Menu, X, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import '../index.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,7 +50,7 @@ const Header = () => {
         </div>
 
         {isMenuOpen && (
-  <div className="md:hidden fixed inset-0 z-40 glass-effect border-t border-border/50 animate-slide-down">
+  <div className="md:hidden fixed inset-0 z-40 glass-effect border-t border-border/50 top-[200%]">
     <div className="flex flex-col items-center justify-center h-full gap-8">
       {menuItems.map((item) => (
         <button
