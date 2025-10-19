@@ -60,20 +60,7 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-glow-primary"
-              >
-                <FileText className="w-5 h-5 mr-2" />
-                Ver Ficha Técnica
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground"
-              >
-                Explorar Modelos
-              </Button>
+      
             </div>
 
             <div className="flex items-center gap-8 text-sm text-muted-foreground">
