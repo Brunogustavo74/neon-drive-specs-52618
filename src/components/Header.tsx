@@ -50,7 +50,7 @@ const Header = () => {
         </div>
 
   {isMenuOpen && (
-  <div className="md:hidden fixed inset-0 z-40 bg-black/50 backdrop-blur-md border-t border-border/50 top-[200%]">
+  <div className="md:hidden fixed inset-0 z-40  border-t border-border/50 top-[600%]">
     <div className="flex flex-col items-center justify-center h-full gap-8">
       {menuItems.map((item) => (
         <button
