@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { X } from 'lucide-react';
-import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTitle, DialogClose } from '@/components/ui/dialog';
 import gallery1 from '@/assets/gallery-1.jpg';
 import gallery2 from '@/assets/gallery-2.jpg';
 import gallery3 from '@/assets/gallery-3.jpg';
@@ -89,8 +89,7 @@ const Gallery = () => {
             </div>
           ))}
         </div>
-
-     <Dialog open={selectedImage !== null} onOpenChange={(open) => !open && setSelectedImage(null)}>
+<Dialog open={selectedImage !== null} onOpenChange={(open) => !open && setSelectedImage(null)}>
           <DialogContent className="max-w-4xl glass-effect border-primary/20">
             <DialogTitle className="sr-only">
               {selectedImage !== null ? images[selectedImage].title : ''}
@@ -110,13 +109,14 @@ const Gallery = () => {
                 </div>
               </div>
             )}
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 p-2 rounded-full glass-effect hover:bg-primary/20 transition-colors"
-              aria-label="Fechar galeria"
-            >
-              <X className="w-5 h-5" />
-            </button>
+      <DialogClose asChild>
+  <button
+    className="absolute top-4 right-4 p-2 rounded-full glass-effect hover:bg-primary/20 transition-colors"
+    aria-label="Fechar galeria"
+  >
+    <X className="w-5 h-5" />
+  </button>
+</DialogClose>
           </DialogContent>
         </Dialog>
       </div>
