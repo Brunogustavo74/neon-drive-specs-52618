@@ -5,6 +5,19 @@ import gtrImg from '@/assets/gtr-r35.jpg';
 import rx7Img from '@/assets/rx7-fd.jpg';
 
 const ModelsGrid = () => {
+const currentAudioRef = useRef<HTMLAudioElement | null>(null);
+
+  const tocarSom = (sound: string) => {
+    
+    if (currentAudioRef.current) {
+      currentAudioRef.current.pause();
+      currentAudioRef.current.currentTime = 0;
+    }
+
+    const newAudio = new Audio(sound);
+    currentAudioRef.current = newAudio;
+    newAudio.play();
+  };
 const models = [
   {
     name: 'Skyline R34',
@@ -51,10 +64,7 @@ const models = [
     accent: 'hover:card-glow-accent',
   };
 
-const tocarSom = (sound: string) => {
-  const audio = new Audio(sound);
-  audio.play();
-};
+
 
 
   return (
