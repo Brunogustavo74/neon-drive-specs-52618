@@ -17,6 +17,11 @@ const Hero = () => {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
+  
+  const tocarSom = () => {
+    const audio = new Audio('/supra-sound.mp3');
+    audio.play();
+  };
 
   const specs = [
     { icon: Zap, label: 'Potência', value: '690 Cavalos', subtitle: 'Mapa Estágio 3' },
@@ -89,6 +94,7 @@ const Hero = () => {
               alt="Toyota Supra MK4 Hello Kitty, pintura rosa perolada com bodykit wide e detalhes customizados"
               className="relative rounded-2xl shadow-2xl w-full h-auto"
               loading="eager"
+              onClick={tocarSom}
             />
             <div className="absolute -bottom-6 -right-6 glass-effect p-4 rounded-xl">
               <div className="text-xs text-muted-foreground">Peso</div>
