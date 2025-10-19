@@ -61,13 +61,7 @@ const Header = () => {
                   {item.label}
                 </button>
               ))}
-              <Button 
-                variant="outline" 
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-              >
-                <Download className="w-4 h-4 mr-2" />
-                Download Specs
-              </Button>
+      
             </div>
           </div>
         )}
