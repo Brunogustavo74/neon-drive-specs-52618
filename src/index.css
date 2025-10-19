@@ -142,3 +142,57 @@ All colors MUST be HSL.
     will-change: transform;
   }
 }
+
+
+.glass-effect {
+  background: rgba(20, 20, 20, 0.5);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.4),
+    inset 0 0 0.5px rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-effect::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0.05) 40%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+.glass-effect::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 200, 255, 0.25),
+    transparent 70%
+  );
+  filter: blur(40px);
+  animation: glassGlow 6s ease-in-out infinite alternate;
+  opacity: 0.5;
+}
+
+@keyframes glassGlow {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(20px, 20px);
+  }
+}
