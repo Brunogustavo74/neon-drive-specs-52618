@@ -40,8 +40,8 @@ const Hero = () => {
               </span>
             </div>
             
-         <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-glow-secondary leading-tight">
-  Toyota Supra MK4
+         <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-glow-primary leading-tight">
+  Toyota Supra MK4         
   <span className="lock text-pink-500 mt-2">Hello Kitty Edition</span>
 </h1>
 
