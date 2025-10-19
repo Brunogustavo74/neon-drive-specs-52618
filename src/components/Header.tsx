@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Menu, X, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import '../styles/glass.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,21 +51,20 @@ const Header = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden fixed inset-0 top-[500%] bg-background/95 backdrop-blur-lg animate-fade-in glass-effect">
-            <div className="flex flex-col items-center justify-center h-full gap-8">
-              {menuItems.map((item) => (
-                <button
-                  key={item.label}
-                  onClick={() => scrollToSection(item.href)}
-                  className="text-2xl font-display text-foreground hover:text-primary transition-colors"
-                >
-                  {item.label}
-                </button>
-              ))}
-      
-            </div>
-          </div>
-        )}
+  <div className="md:hidden fixed inset-0 z-40 glass-effect border-t border-border/50 animate-slide-down">
+    <div className="flex flex-col items-center justify-center h-full gap-8">
+      {menuItems.map((item) => (
+        <button
+          key={item.label}
+          onClick={() => scrollToSection(item.href)}
+          className="text-2xl font-display text-foreground hover:text-primary transition-colors duration-200"
+        >
+          {item.label}
+        </button>
+      ))}
+    </div>
+  </div>
+)}
       </nav>
     </header>
   );
