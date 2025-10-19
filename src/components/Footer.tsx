@@ -2,10 +2,8 @@ import { Instagram, Twitter, Youtube, Github } from 'lucide-react';
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Youtube, href: '#', label: 'YouTube' },
-    { icon: Github, href: '#', label: 'GitHub' },
+    { icon: Instagram, href: 'https://www.instagram.com/bruno.4mz?igsh=NDU2ZW0waWJxeWJk', label: 'Instagram' },
+    { icon: Github, href: 'https://github.com/Brunogustavo74/neon-drive-specs-52618', label: 'GitHub' },
   ];
 
   const footerLinks = [
