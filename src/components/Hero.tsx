@@ -19,7 +19,7 @@ const Hero = () => {
   }, []);
   
   const tocarSom = () => {
-    const audio = new Audio('/supra-sound.mp3');
+    const audio = new Audio('/buy.mp3');
     audio.play();
   };
 
