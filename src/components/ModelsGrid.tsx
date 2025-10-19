@@ -6,10 +6,10 @@ import rx7Img from '@/assets/rx7-fd.jpg';
 import { useRef } from 'react';
 
 const ModelsGrid = () => {
-  // 🔊 Referência para o áudio atual
+
   const currentAudioRef = useRef<HTMLAudioElement | null>(null);
 
-  // 🔊 Função que toca o som e para o anterior
+  
   const tocarSom = (sound: string) => {
     // Se já estiver tocando algo, pausa e reseta
     if (currentAudioRef.current) {
@@ -17,7 +17,7 @@ const ModelsGrid = () => {
       currentAudioRef.current.currentTime = 0;
     }
 
-    // Cria um novo áudio e toca
+  
     const newAudio = new Audio(sound);
     currentAudioRef.current = newAudio;
     newAudio.play();
@@ -49,7 +49,7 @@ const ModelsGrid = () => {
       image: supraImg,
       color: 'accent',
       alt: 'Toyota Supra MK4 Hello Kitty edição especial rosa perolada',
-      sound: '/supra.mp3',
+      sound: '/supraa.mp3',
     },
     {
       name: 'RX-7 FD',
