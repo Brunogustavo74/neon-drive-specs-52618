@@ -90,7 +90,7 @@ const Gallery = () => {
           ))}
         </div>
 
-        <Dialog open={selectedImage !== null} onOpenChange={() => setSelectedImage(null)}>
+     <Dialog open={selectedImage !== null} onOpenChange={(open) => !open && setSelectedImage(null)}>
           <DialogContent className="max-w-4xl glass-effect border-primary/20">
             <DialogTitle className="sr-only">
               {selectedImage !== null ? images[selectedImage].title : ''}
