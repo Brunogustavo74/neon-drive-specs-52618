@@ -89,13 +89,14 @@ const Hero = () => {
             }}
           >
             <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl blur-3xl"></div>
-            <img
+          <button onClick={tocarSom}>  <img
               src={supraHero}
               alt="Toyota Supra MK4 Hello Kitty, pintura rosa perolada com bodykit wide e detalhes customizados"
               className="relative rounded-2xl shadow-2xl w-full h-auto"
               loading="eager"
-              onClick={tocarSom}
+              
             />
+            </button>
             <div className="absolute -bottom-6 -right-6 glass-effect p-4 rounded-xl">
               <div className="text-xs text-muted-foreground">Peso</div>
               <div className="text-2xl font-display font-bold text-foreground">1,380 kg</div>
