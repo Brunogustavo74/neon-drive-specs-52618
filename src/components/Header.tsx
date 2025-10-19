@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Menu, X, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import '../styles/glass.css';
+import '../index.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
