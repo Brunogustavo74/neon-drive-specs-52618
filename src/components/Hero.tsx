@@ -19,7 +19,7 @@ const Hero = () => {
   }, []);
 
   const specs = [
-    { icon: Zap, label: 'Potência', value: '680 HP', subtitle: 'Mapa Estágio 3' },
+    { icon: Zap, label: 'Potência', value: '690 Cavalos', subtitle: 'Mapa Estágio 3' },
     { icon: Gauge, label: 'Torque', value: '740 Nm', subtitle: 'Peak @ 5500 RPM' },
     { icon: Cog, label: 'Motor', value: '2JZ-GTE', subtitle: 'I6 Twin Turbo' },
   ];

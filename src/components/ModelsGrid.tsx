@@ -5,40 +5,40 @@ import gtrImg from '@/assets/gtr-r35.jpg';
 import rx7Img from '@/assets/rx7-fd.jpg';
 
 const ModelsGrid = () => {
-  const models = [
-    {
-      name: 'Skyline R34',
-      engine: 'RB26DETT I6 Twin Turbo',
-      power: '320-500+ HP',
-      image: skylineImg,
-      color: 'primary',
-      alt: 'Nissan Skyline R34 GT-R vista lateral com luzes traseiras características',
-    },
-    {
-      name: 'GTR R35',
-      engine: 'VR38DETT V6 Twin Turbo',
-      power: '720 HP',
-      image: gtrImg,
-      color: 'secondary',
-      alt: 'Nissan GTR R35 com acabamento preto fosco e kit aerodinâmico',
-    },
-    {
-      name: 'Supra MK4 HK',
-      engine: '2JZ-GTE I6 Twin Turbo',
-      power: '680 HP',
-      image: supraImg,
-      color: 'accent',
-      alt: 'Toyota Supra MK4 Hello Kitty edição especial rosa perolada',
-    },
-    {
-      name: 'RX-7 FD',
-      engine: '13B-REW Twin Rotor',
-      power: '450+ HP',
-      image: rx7Img,
-      color: 'primary',
-      alt: 'Mazda RX-7 FD com motor rotativo e stance agressivo',
-    },
-  ];
+const models = [
+  {
+    name: 'Skyline R34',
+    engine: 'RB26DETT I6 Twin Turbo',
+    power: '325-507+ cv', // 320-500 HP → 325-507 cv
+    image: skylineImg,
+    color: 'primary',
+    alt: 'Nissan Skyline R34 GT-R vista lateral com luzes traseiras características',
+  },
+  {
+    name: 'GTR R35',
+    engine: 'VR38DETT V6 Twin Turbo',
+    power: '730 cv', // 720 HP → 730 cv
+    image: gtrImg,
+    color: 'secondary',
+    alt: 'Nissan GTR R35 com acabamento preto fosco e kit aerodinâmico',
+  },
+  {
+    name: 'Supra MK4 HK',
+    engine: '2JZ-GTE I6 Twin Turbo',
+    power: '690 cv', // 680 HP → 690 cv
+    image: supraImg,
+    color: 'accent',
+    alt: 'Toyota Supra MK4 Hello Kitty edição especial rosa perolada',
+  },
+  {
+    name: 'RX-7 FD',
+    engine: '13B-REW Twin Rotor',
+    power: '456+ cv', // 450+ HP → 456+ cv
+    image: rx7Img,
+    color: 'primary',
+    alt: 'Mazda RX-7 FD com motor rotativo e stance agressivo',
+  },
+];
 
   const glowClass = {
     primary: 'hover:card-glow-primary',

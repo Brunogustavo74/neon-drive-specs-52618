@@ -4,44 +4,43 @@ import { Download, FileSpreadsheet } from 'lucide-react';
 
 const SpecsTable = () => {
   const specs = [
-    {
-      model: 'Supra MK4 HK',
-      engine: '2JZ-GTE I6 Twin Turbo',
-      power: '680 HP',
-      torque: '740 Nm',
-      acceleration: '3.1 s',
-      weight: '1,380 kg',
-      drivetrain: 'RWD',
-    },
-    {
-      model: 'Skyline R34',
-      engine: 'RB26DETT I6 Twin Turbo',
-      power: '420 HP',
-      torque: '450 Nm',
-      acceleration: '4.5 s',
-      weight: '1,500 kg',
-      drivetrain: 'AWD',
-    },
-    {
-      model: 'GTR R35',
-      engine: 'VR38DETT V6 Twin Turbo',
-      power: '720 HP',
-      torque: '780 Nm',
-      acceleration: '2.9 s',
-      weight: '1,740 kg',
-      drivetrain: 'AWD',
-    },
-    {
-      model: 'RX-7 FD',
-      engine: '13B-REW Twin Rotor',
-      power: '450 HP',
-      torque: '420 Nm',
-      acceleration: '4.2 s',
-      weight: '1,280 kg',
-      drivetrain: 'RWD',
-    },
-  ];
-
+  {
+    model: 'Supra MK4 HK',
+    engine: '2JZ-GTE I6 Twin Turbo',
+    power: '690 cv',       // 680 HP → 690 cv
+    torque: '740 Nm',
+    acceleration: '3,1 s',
+    weight: '1.380 kg',
+    drivetrain: 'Traseira',
+  },
+  {
+    model: 'Skyline R34',
+    engine: 'RB26DETT I6 Twin Turbo',
+    power: '426 cv',       // 420 HP → 426 cv
+    torque: '450 Nm',
+    acceleration: '4,5 s',
+    weight: '1.500 kg',
+    drivetrain: 'Tração integral',
+  },
+  {
+    model: 'GTR R35',
+    engine: 'VR38DETT V6 Twin Turbo',
+    power: '730 cv',       // 720 HP → 730 cv
+    torque: '780 Nm',
+    acceleration: '2,9 s',
+    weight: '1.740 kg',
+    drivetrain: 'Tração integral',
+  },
+  {
+    model: 'RX-7 FD',
+    engine: '13B-REW Twin Rotor',
+    power: '456 cv',       // 450 HP → 456 cv
+    torque: '420 Nm',
+    acceleration: '4,2 s',
+    weight: '1.280 kg',
+    drivetrain: 'Traseira',
+  },
+];
   return (
     <section id="specs" className="py-24 bg-card/30">
       <div className="container mx-auto px-6">
