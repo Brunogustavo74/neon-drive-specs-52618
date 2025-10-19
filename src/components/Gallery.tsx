@@ -109,14 +109,7 @@ const Gallery = () => {
                 </div>
               </div>
             )}
-      <DialogClose asChild>
-  <button
-    className="absolute top-4 right-4 p-2 rounded-full glass-effect hover:bg-primary/20 transition-colors"
-    aria-label="Fechar galeria"
-  >
-    <X className="w-5 h-5" />
-  </button>
-</DialogClose>
+     
           </DialogContent>
         </Dialog>
       </div>
