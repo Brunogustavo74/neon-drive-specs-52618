@@ -9,42 +9,53 @@ const models = [
   {
     name: 'Skyline R34',
     engine: 'RB26DETT I6 Twin Turbo',
-    power: '325-507+ cv', // 320-500 HP → 325-507 cv
+    power: '325-507+ cv',
     image: skylineImg,
     color: 'primary',
     alt: 'Nissan Skyline R34 GT-R vista lateral com luzes traseiras características',
+    sound: '/skyline.mp3', // 🔊 Caminho do som
   },
   {
     name: 'GTR R35',
     engine: 'VR38DETT V6 Twin Turbo',
-    power: '730 cv', // 720 HP → 730 cv
+    power: '730 cv',
     image: gtrImg,
     color: 'secondary',
     alt: 'Nissan GTR R35 com acabamento preto fosco e kit aerodinâmico',
+    sound: '/gtr.mp3', // 🔊
   },
   {
     name: 'Supra MK4 HK',
     engine: '2JZ-GTE I6 Twin Turbo',
-    power: '690 cv', // 680 HP → 690 cv
+    power: '690 cv',
     image: supraImg,
     color: 'accent',
     alt: 'Toyota Supra MK4 Hello Kitty edição especial rosa perolada',
+    sound: '/supraa.mp3', // 🔊
   },
   {
     name: 'RX-7 FD',
     engine: '13B-REW Twin Rotor',
-    power: '456+ cv', // 450+ HP → 456+ cv
+    power: '456+ cv',
     image: rx7Img,
     color: 'primary',
     alt: 'Mazda RX-7 FD com motor rotativo e stance agressivo',
+    sound: '/rx7.mp3', // 🔊
   },
 ];
+
 
   const glowClass = {
     primary: 'hover:card-glow-primary',
     secondary: 'hover:card-glow-secondary',
     accent: 'hover:card-glow-accent',
   };
+
+const tocarSom = (sound: string) => {
+  const audio = new Audio(sound);
+  audio.play();
+};
+
 
   return (
     <section id="modelos" className="py-24">
@@ -61,6 +72,7 @@ const models = [
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {models.map((model, index) => (
             <Card
+            onClick={() => tocarSom(model.sound)}
               key={model.name}
               className={`group glass-effect border-border/50 overflow-hidden transition-all duration-300 ${glowClass[model.color as keyof typeof glowClass]} cursor-pointer animate-fade-in`}
               style={{ animationDelay: `${index * 100}ms` }}
