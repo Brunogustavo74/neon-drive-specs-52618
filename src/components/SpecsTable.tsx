@@ -90,21 +90,8 @@ const SpecsTable = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
-          <Button 
-            size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-glow-primary"
-          >
-            <Download className="w-5 h-5 mr-2" />
-            Baixar PDF Completo
-          </Button>
-          <Button 
-            size="lg"
-            variant="outline"
-            className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground"
-          >
-            <FileSpreadsheet className="w-5 h-5 mr-2" />
-            Planilha Excel
-          </Button>
+        
+       
         </div>
       </div>
     </section>
