@@ -11,7 +11,7 @@ const Footer = () => {
   const footerLinks = [
     { label: 'Sobre', href: '#' },
     { label: 'Modelos', href: '#modelos' },
-    { label: 'Specs', href: '#specs' },
+    { label: 'Especificações', href: '#specs' },
     { label: 'Galeria', href: '#galeria' },
     { label: 'Contato', href: '#contato' },
   ];
