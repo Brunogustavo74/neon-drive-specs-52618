@@ -62,11 +62,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-border/50">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
             <p>© 2025 JDM Legends. Todos os direitos reservados.</p>
-            <p>
-              Imagens: <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary">Unsplash</a> / 
-              <a href="https://pexels.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary ml-1">Pexels</a> / 
-              <span className="ml-1">Geradas com IA</span>
-            </p>
+       
           </div>
         </div>
       </div>
